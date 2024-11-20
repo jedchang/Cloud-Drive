@@ -1,0 +1,112 @@
+.my-starred {
+  width: 100%;
+  background-color: #f8f8f8;
+
+  .container {
+    width: 1110px;
+    padding: 24px 15px;
+    margin: 0 auto;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .name {
+      font-size: 24px;
+      font-weight: 700;
+      color: #000000;
+    }
+    .btn-showAll {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      color: #000000;
+      transition: all 0.4s;
+      &:hover {
+        color: #2a8cfd;
+      }
+    }
+  }
+
+  .starred-list {
+    .starred-wrap {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .starred {
+        width: 255px;
+        padding: 25px 26px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px #00000029;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        position: relative;
+        margin-top: 18px;
+        margin-right: 20px;
+        outline: 0;
+        transition: all 0.4s;
+        &:nth-child(4n + 4) {
+          margin-right: 0;
+        }
+        &:hover {
+          box-shadow: 0 2px 4px #00000029;
+        }
+      }
+    }
+
+    .starred-folder {
+      outline: 0;
+      &:hover {
+        box-shadow: 0 2px 4px #00000029;
+      }
+      i {
+        margin-right: 18px;
+        color: #ffba00;
+      }
+      .starred-folder-name {
+        font-size: 16px;
+        color: #000000;
+      }
+    }
+
+    .starred-file {
+      outline: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .status {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 8px;
+        .star {
+          height: 24px;
+          margin-left: 5px;
+          text-decoration: none;
+          i {
+            color: #ffba00;
+          }
+        }
+      }
+
+      .starred-file-name {
+        text-decoration: none;
+        color: #000000;
+        text-align: left;
+        height: 44px;
+        word-break: break-all; // 自動換行
+        width: 100%;
+      }
+    }
+  }
+}
